@@ -1,0 +1,116 @@
+* {
+    border: none;
+    /*border-radius: 0;*/
+    font-family: "SF Pro Display Bold","JetBrainsMono Nerd Font Propo";
+    /*font-size: 13px;*/
+    font-size: 16px;
+
+    /*NECESSARY*/
+    margin: 0;
+    min-height: 0;
+    padding: 0;
+}
+
+window#waybar { 
+    background: transparent;
+    color: rgb(237, 229, 244);
+    /*check the background why no transparent once*/
+}
+
+tooltip { 
+  background: rgba(43, 48, 59, 0.5);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+  color: white;
+}
+#workspaces{
+    transition: all 150ms ease-in-out;
+    background-color: #0f1320;
+    padding: 4px;
+    border-radius: 20px;
+    
+}
+#workspaces button {
+    transition: all 150ms ease-in-out;
+    padding: 0 5px;
+    background: alpha(#1f1e1e, 0.8);
+    color: rgb(151, 148, 148);
+    border: 1px solid #1f1e1e;
+    margin: 0 2px;
+    
+    
+}
+#workspaces button label {
+    opacity: 0;
+}
+#workspaces button.active label{
+    opacity: 1;
+}
+#workspaces button.active {
+
+    transition: all 150ms ease-in-out;
+    min-width: 50px;
+    background: #90b8f8;
+    color: #0f1320;
+    border-radius: 10px;
+    border: 0px;
+    
+
+}
+
+#clock {
+    background-color: #0f1320;
+    color: #14baf1;
+    margin:0 5px;
+    padding: 0 8px;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: initial;
+    font-size: 17px;
+}
+
+#battery {
+    background-color: #0f1320;
+    color: #7cff6b;
+    margin:0 5px;
+    padding: 0 8px;
+    border-radius: 20px;
+}
+#pulseaudio{
+    background-color: #0f1320;
+    color: #f5c85a;
+    margin:0 5px;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+#network {
+    background-color: #0f1320;
+    color: #8b8ff5;
+    margin:0 5px;
+    padding: 0 8px;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: initial;
+    font-size: 16px;
+}
+#custom-spotify {
+    background-color: #0f1320;  /*rgba(30, 215, 96, 0.15)*/
+    color: #1DB954;
+    padding: 0 8px;
+    border-radius: 20px;
+    font-weight: bold;
+    
+}
+#custom-power {
+    background-color: #0f1320;
+    color: #ff5e5e;
+    margin: 0 5px;
+    padding: 0 12px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+#custom-power:hover {
+    background-color: #1a1f33;
+    color: #ff3b3b;
+}
